@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth0 Callback</title>
+    <script>
+      chrome.runtime.sendMessage(
+        'iclcbnnhmiajpinmgkdlljbllfoolbci',
+        { data: window.location.href },
+        (response) => {
+          window.close();
+        }
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
